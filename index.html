@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css\style.css">
+  <title>R&amp;R Solar | Welcome</title>
+  <link rel="shortcut icon" href="img\favicon.jpg">
+</head>
+<body>
+  <nav id="home" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand nav-link" href="#home">
+        <img class="logo" src="img/logo.png" alt="R&amp;R Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home" style= "font-size: 1rem; color: #065081;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#somos" style= "font-size: 1rem; color: #065081;">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos" style= "font-size: 1rem; color: #065081;">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clientes" style= "font-size: 1rem; color: #065081;">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contatos" style= "font-size: 1rem; color: #065081;">Contato</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="https://www.instagram.com/cariri_energia_solar/"><i class="bi-instagram nav-link" style="font-size: 1rem; color: #065081;"></i></a>
+          </li>
+          <!--<li class="nav-item">
+            <a href="#"><i class="bi-facebook nav-link" style="font-size: 1rem; color: #065081;"></i></a>
+          </li>-->
+          <li class="nav-item">
+            <a href="https://wa.me/5588981575781"><i class="bi-whatsapp nav-link" style="font-size: 1rem; color: #065081;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato"><i class="bi-envelope nav-link" style="font-size: 1rem; color: #065081;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="modal fade" tabindex="-1" id="orcamento-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Faça já seu orçamento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #065081;"></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formsubmit.co/77179a4db5e2414b21e295f9ba9def6b" method="POST">
+              <div class="form-floating">
+                <input id="email" type="email" name="email" class="form-control" placeholder="Digite seu email" required>
+                <label for="email">Digite seu email</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control col-form-label" rows="2" name="Mensagem" id="message" type="text" placeholder="Mensagem" required></textarea>
+                <label for="message" >Deixe sua mensagem</label>
+                <br>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar sem enviar</button>
+            	<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+              </div>
+            </form>                                       
+            </div>          
+        </div>
+      </div>
+    </div>
+    <div id="cariri-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#cariri-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#cariri-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#cariri-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="img/carrosel1.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-5 d-md-block">
+            <h3 class="fs-3 mt-4">"Abra asas para um futuro sustentável, onde a energia renovável é o combustível que impulsiona nossa jornada rumo à harmonia com o planeta."</h3>
+            <h1 class="display-1 fw-bolder">R&amp;R Solar</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#orcamento-modal" Style="background-color: #065081;">Faça já seu orçamento</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/carrosel2.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-5 d-md-block">
+            <h3 class="fs-3 mt-4">"Desperte o poder do sol e ilumine o mundo com energia limpa e renovável."</h3>
+            <h1 class="display-1 fw-bolder">R&amp;R Solar</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#orcamento-modal" Style="background-color: #065081;">Faça já seu orçamento</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/carrosel3.jpg" class="d-block w-100 c-img" alt="...">
+          <div class="carousel-caption top-0 mt-5 d-md-block">
+            <h3 class="fs-3 mt-4">"Liberte-se das amarras dos altos custos de energia e economize sua conta de luz enquanto ilumina seu caminho com a energia solar."</h3>
+            <h1 class="display-1 fw-bolder">R&amp;R Solar</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#orcamento-modal" Style="background-color: #065081;">Faça já seu orçamento</button>
+          </div>
+        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#cariri-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cariri-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <section class="navbar navbar-expand-lg navbar-dark pt-6">
+      <div class="container c-cont d-flex justify-content-center">
+        <h3 class="fs-3 fst-italic text-center" style="font-size: 1rem; color:#065081;">Estamos entrando em uma era de inovação energética sem precedentes.</h3>
+      </div>
+    </section>
+    <section style="background-color: #065081;">
+      <div class="c-cont-card container d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mx-auto">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title" style="color:#065081">Quem Somos</h5>
+                <p class="card-text" style="color:#065081">"Somos impulsionadores de uma revolução energética, guiados pela luz do sol e comprometidos em transformar o mundo em um lugar mais brilhante e sustentável".</p>
+                <a href="#somos" class="btn btn-primary" Style="background-color: #065081;">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mx-auto">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title" style="color:#065081">Serviços</h5>
+                <p class="card-text" style="color:#065081">"Oferecemos soluções energéticas renováveis, libertando seu potencial sustentável e fornecendo uma fonte limpa, confiável e ilimitada de energia solar".</p>
+                <a href="#servicos" class="btn btn-primary" Style="background-color: #065081;">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mx-auto">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title" style="color:#065081">Clientes</h5>
+                <p class="card-text" style="color:#065081">"Nosso compromisso é atender e superar suas expectativas, oferecendo uma experiência personalizada, inovadora e transformadora, porque sabemos que cada cliente é único e merece o melhor."</p>
+                <a href="#clientes" class="btn btn-primary" Style="background-color: #065081;">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+    
+      <section id="somos" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container c-cont d-flex justify-content-center">
+          <h3 class="fs-3 fst-italic text-center " style="font-size: 1rem; color:#065081;">Quem Somos</h3>
+        </div>
+      </section>
+      <section style="background-color: #065081;">
+        <div class="container text-center mx-auto p-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <img class="img-fluid rounded card-img-top mb-3" src="img/somos.jpeg" alt="Imagem Quem Somos">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+              <p class="text-center fs-5 " style="background-color: #065081; color: whitesmoke;" >Nós, da R&amp;R Solar, somos uma empresa fundada em março de 2022 por dois irmãos com a missão de trazer inovação e tecnologia na utilização da energia solar. Acreditamos no potencial da energia solar como uma fonte limpa, renovável e abundantemente disponível em nosso país. Nossa equipe está empenhada em oferecer soluções sustentáveis e eficientes, impulsionando a adoção da energia solar e contribuindo para um futuro mais verde e consciente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="servicos" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container c-cont d-flex justify-content-center">
+          <h3 class="fs-3 fst-italic text-center" style="font-size: 1rem; color:#065081;">Nossos Serviços</h3>
+        </div>
+      </section>
+      <section style="background-color: #065081;">
+        <div class="container text-center mx-auto p-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <img class="img-fluid rounded mb-3" src="img/servicos.jpg" alt="Imagem Servicos" class="card-img-top">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+              <p class="text-center fs-5" style="background-color: #065081; color: whitesmoke;" >Na R&amp;R Solar, oferecemos uma gama completa de serviços para sistemas de energia solar. Nossa equipe altamente qualificada realiza manutenção preventiva e corretiva, garantindo o funcionamento ideal dos sistemas. Além disso, fornecemos instalações personalizadas, projetadas de acordo com as necessidades específicas de cada cliente. Cuidamos também da limpeza regular dos painéis solares, assegurando que sua eficiência não seja afetada por sujeira ou detritos. Nossos serviços abrangentes são projetados para garantir soluções confiáveis e completas no campo da energia solar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="clientes" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container c-cont d-flex justify-content-center">
+          <h3 class="fs-3 fst-italic text-center" style="font-size: 1rem; color:#065081;">Nossos Clientes</h3>
+        </div>
+      </section>
+      <section style="background-color: #065081;">
+        <div class="container text-center mx-auto p-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <img class="img-fluid rounded mb-3" src="img/clientes.jpeg" alt="Imagem Clientes" class="card-img-top">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+              <p class="text-center fs-5" style="background-color: #065081; color: whitesmoke;" >Na R&amp;R Solar, contamos com uma base sólida de clientes satisfeitos, que confiam em nossos serviços e soluções de energia solar. Trabalhamos com indivíduos, famílias e empresas, oferecendo abordagens personalizadas para atender às suas necessidades específicas. Nossa equipe altamente qualificada se dedica a fornecer um serviço excepcional desde o planejamento até a conclusão de cada projeto. Valorizamos a confiança depositada em nós e estamos comprometidos em superar as expectativas dos nossos clientes, ajudando-os a criar um futuro mais sustentável. Junte-se à nossa lista de clientes satisfeitos e experimente os benefícios da energia solar em sua vida diária.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatos" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container c-cont d-flex justify-content-center">
+          <h3 class="fs-3 fst-italic text-center" style="font-size: 1rem; color:#065081;">Nossos Contatos</h3>
+        </div>
+      </section>
+      <section style="background-color: #065081;">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <iframe class="fluid rounded p-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.1587470098307!2d-39.41039282415145!3d-7.222726970925104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a1847976ac79c3%3A0x32fbee8397ed3!2sR.%20Jos%C3%A9%20Francisco%20Teixeira%2C%2064%20-%20Vila%20Alta%2C%20Crato%20-%20CE%2C%2063119-260%2C%20Brazil!5e0!3m2!1sen!2sca!4v1687471147633!5m2!1sen!2sca" width="500" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <p style="font-size: 12px; color: whitesmoke;"><i class="bi-house p-5" style="font-size: 10px; color: whitesmoke;"></i> Rua José Francisco Teixeira, 64 - Vila Alta - Crato - CE </p>
+                <p class="text-decoration-none" style="font-size: 12px; color: whitesmoke !important;"><i class="bi-phone p-5 text-decoration-none" style="font-size:10px; color: whitesmoke;"></i> (88) 98157-5781</p>
+
+            </div>
+            <div class="col" id="contato">
+              <h2 class="text-center p-5" style="background-color: #065081; color: whitesmoke;">Entre em Contato</h2>
+              <form action="https://formsubmit.co/77179a4db5e2414b21e295f9ba9def6b" method="POST">
+                	  <label for="nome" class="form-label" style="color: whitesmoke">Nome Completo</label>
+                      <input class="form-control" type="text" name="Nome" id="nome" placeholder="Nome Completo" required>
+                      <label for="Email" class="mt-2 mt-sm-2 form-label" style="color: whitesmoke">Email</label>
+                      <input class="form-control" type="email" name="Email" id="Email" placeholder="Email" required>
+                      <label for="message" class="mt-2 form-label" style="color: whitesmoke">Deixe sua mensagem</label>
+                      <textarea class="form-control" rows="4"name="Mensagem" id="message" placeholder="Mensagem" required></textarea>
+                      <button type="submit" class="btn btn-primary mt-3 mb-3" style="background-color: whitesmoke; color: #065081;"><strong>Enviar</strong></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+   </main>
+    <footer class="bg-light text-dark pt-5 pb-4">
+      <div class="container d-flex justify-content-center">
+        <p><i class="c-circle"></i>R&amp;R Solar. Todos os direitos Reservados. <a href="Privacidade.html" target="_blank">Política de Privacidade</a>
+         </p>
+      </div>
+      <hr class="mb-4">
+    </footer>
+ </body>
+</html>

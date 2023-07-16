@@ -1,0 +1,44 @@
+.p {
+  font-family: Blinker, sans-serif;
+}
+
+h5, h4, h3, h2, h1 {
+  font-family: Arimo, sans-serif;
+}
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {  
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.logo {
+  width: 75px;
+}
+
+.c-cont {
+  height: 180px;
+  width: 100%;
+}
+
+.c-cont-card {
+  min-height: 480px;
+  max-height: 700px;
+  background-color: #065081;
+}
+
+.c-contato {
+  width: 60%;
+}
+
+.nav-link:hover {
+  color:blue !important;
+}
+
+
+
+
